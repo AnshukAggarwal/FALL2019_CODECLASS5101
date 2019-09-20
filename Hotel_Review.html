@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Hotel Review</title>
+    </head>
+    <body>
+        <main>
+            <h1>We would love to hear from you</h1>
+            <h2>Here is a short survey about your stay with us.</h2>
+        </main>
+        <form method="post" action="https://postman-echo.com/post">
+        <label for="client_name">Please enter your name:</label>
+        <input type="text" id="client_name" name="client_name" placeholder="Your Name" />
+        <div>
+            <h3>How many days did you stay with us?</h3>
+            <select id="stay_duration" name="stay_duration">
+                <option value="duration0">- - -</option>
+                <option value="duration1">1 day</option>
+                <option value="duration2">2 days</option>
+                <option value="duration3">3 days</option>
+                <option value="duration4">3+ days</option>
+            </select>
+        </div>
+        <div>
+            <h3>How would you rate your experience?</h3>
+            <input type="radio" id="very_good" name="client_experience"/>
+            <label for="very_good">Very Good</label>
+            <input type="radio" id="good" name="client_experience"/>
+            <label for="good">Good</label>
+            <input type="radio" id="average" name="client_experience"/>
+            <label for="average">Average</label>
+            <input type="radio" id="not_good" name="client_experience"/>
+            <label for="not_good">Not Good</label>
+        </div>
+        <div>
+            <h3>Please rate the quality of food</h3>
+            <input type="radio" id="food_quality1" name="food_quality" />
+            <label for="food_quality1">Very Good</label>
+            <input type="radio" id="food_quality2" name="food_quality" />
+            <label for="food_quality2">Good</label>
+            <input type="radio" id="food_quality3" value="food_quality" />
+            <label for="food_quality3">Average</label>
+            <input type="radio" id="food_quality4" name="food_qulaity"/>
+            <label for="food_quality4">Not Good</label>
+        </div>
+        <div>
+            <h3>Follow us on Social Media</h3>
+            <input type="checkbox" id="social_media1" name="social_media1" />
+            <label for="social_media1">Facebbok</label>
+            <input type="checkbox" id="social_media2" name="social_media2" />
+            <label for="social_media2">Instagram</label>
+            <input type="checkbox" id="social_media3" name="social_media3" />
+            <label for="social_media3">Youtube</label>
+        </div>
+        <div>
+            <h3>Please select all that apply:</h3>
+            <input type="checkbox" id="general_feedback1" name="general_feedback1" />
+            <label for="general_feedback1">I would reccomend this hotel to friends/family.</label>
+            <div>
+                <input type="checkbox" id="general_feedback2" name="general_feedback2" />
+                <label for="general_feedback2">I would like you to improve the quality of food.</label>
+            </div>
+            <div>
+                <input type="checkbox" id="general_feedback3" name="general_feedback3" />
+                <label for="general_feedback3">I would visit you again</label>
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+        </form>
+    </body>
+</html>
